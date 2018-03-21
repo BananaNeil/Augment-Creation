@@ -1,28 +1,85 @@
-<style>
-body {
-  background-color: black;
-}
-.bg {
-  background: url(bg.jpg) no-repeat bottom;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-  -webkit-filter: blur(6px);
-  -moz-filter: blur(6px);
-  -o-filter: blur(6px);
-  -ms-filter: blur(6px);
-  filter: blur(6px);
-  opacity: 0.5;
-  background-size: cover;
-}
-.embed {
-  display: block;
-  margin: auto;
-  box-shadow: 0px 0px 20px -1px #dbdcc1;
-  background-color: #111;
-}
-</style>
-<div class='bg'>
-</div>
-<iframe class='embed' width="800" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/471737130%3Fsecret_token%3Ds-PZggl&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+<head>
+  <meta property='og:title' content='Augment Creation' />
+  <meta property='og:description' content='A concept albumt about what it means to live as an evolved species.' />
+  <meta property='og:image' content='bg.jpg' />
+  <style>
+    body {
+      font-family: helvetica, sans-serif;
+      background-color: black;
+      text-align: center;
+      color: white; 
+    }
+
+    body * {
+      color: white;
+      text-decoration: none;
+    }
+    .bg {
+      background: url(bg.jpg) no-repeat bottom;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      -webkit-filter: blur(6px);
+      -moz-filter: blur(6px);
+      -o-filter: blur(6px);
+      -ms-filter: blur(6px);
+      filter: blur(6px);
+      opacity: 0.5;
+      background-size: cover;
+    }
+    .description {
+      width: 60%;
+        min-width: 370px;
+      margin: auto;
+        font-size: 18px;
+    }
+    .embed {
+      width: 100%;
+      margin: auto;
+      display: block;
+      max-width: 800px;
+      box-shadow: 0px 0px 20px -1px #dbdcc1;
+      background-color: #111;
+    }
+    h2[disabled=disabled] {
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      padding: 0 20px;
+      font-size: 30px;
+      display: inline-block;
+      border-right: 1px solid white;
+      text-decoration: underline;
+    }
+    .titles > *:last-child {
+      border-right: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class='bg'></div>
+  <h1>Augment Creation</h1>
+  <p class='description'>
+    A concept album about what it means to live as an enlightened species.
+    We are creating and evolving faster than ever before.
+    It's important to solidify what we understand
+    and to think towards the future. 
+  </p>
+  <hr>
+  <div class='titles'>
+    <a href='/'>
+      <h2>
+        Instrumentals
+      </h2>
+    </a>
+    <h2 disabled='disabled' alt="Coming soon!">Album</h1>
+  </div>
+  <iframe class='embed' height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/471737130%3Fsecret_token%3Ds-PZggl&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+</body>
